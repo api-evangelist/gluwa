@@ -1,0 +1,30 @@
+generated: '2026-07-19'
+method: searched
+source: https://docs.gluwa.com/api/authentication.md
+docs: https://docs.gluwa.com/api/authentication.md
+notes: >-
+  No OpenAPI is published for the Gluwa REST API; this profile is captured from the
+  provider's documentation. Gluwa uses two request-authorization mechanisms depending
+  on the endpoint.
+summary:
+  types: [apiKey, http-signature]
+  api_key_in: [header]
+schemes:
+  - name: Authorization
+    type: apiKey
+    in: header
+    parameter: Authorization
+    description: >-
+      API Key + Secret credential pair obtained from the Gluwa Dashboard
+      (dashboard.gluwa.com/ApiKey). Used to authorize account-scoped requests
+      such as creating payment requests. Sandbox and production keys are distinct.
+    credential_source: https://docs.gluwa.com/get-started/dashboard/api-keys.md
+  - name: X-REQUEST-SIGNATURE
+    type: apiKey
+    in: header
+    parameter: X-REQUEST-SIGNATURE
+    description: >-
+      Proof-of-ownership header used mainly on GET requests. Value is
+      Base64Encode("<unix timestamp>.<Address Signature>"), where the address
+      signature is produced with the wallet's private key.
+    signing_docs: https://docs.gluwa.com/development/creating-transaction-signatures.md
