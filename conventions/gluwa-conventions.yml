@@ -1,0 +1,50 @@
+generated: '2026-07-19'
+method: searched
+source: https://docs.gluwa.com/llms.txt
+docs: https://docs.gluwa.com/development/
+notes: >-
+  Cross-cutting request/response semantics for the Gluwa REST API, captured from the
+  provider's developer documentation (no OpenAPI is published).
+authentication:
+  style: api-key + address-signature
+  detail: >-
+    Authorization header (API Key + Secret) and/or X-REQUEST-SIGNATURE header
+    (Base64 of "<unix timestamp>.<address signature>"). See authentication/gluwa-authentication.yml.
+idempotency:
+  supported: true
+  mechanism: request-body-field
+  field: Idem
+  format: UUID
+  scope: transaction-creation
+  conflict_status: 409
+  docs: https://docs.gluwa.com/development/idempotent-requests.md
+  detail: >-
+    Transaction creation supports idempotency via the `Idem` body attribute (must be a
+    UUID). A repeated request with the same Idem value returns HTTP 409 once the first
+    transaction has begun processing, regardless of its success or failure.
+webhooks:
+  supported: true
+  docs: https://docs.gluwa.com/development/webhooks.md
+  detail: >-
+    Webhooks notify a registered/whitelisted wallet address of account events.
+    Configured from the Gluwa Dashboard. See asyncapi/gluwa-webhooks.yml.
+error_envelope:
+  format: custom
+  fields: [Code, Message, ID, ExtraData, InnerErrors]
+  detail: >-
+    Errors return a Code (stable, programmatic), a human Message, an optional ID
+    (500 responses only), optional ExtraData, and an InnerErrors[] array for
+    validation errors. Not RFC 9457. See errors/gluwa-error-codes.yml.
+signatures:
+  docs: https://docs.gluwa.com/development/creating-transaction-signatures.md
+  detail: Transaction and request signatures are generated with the wallet private key.
+environments:
+  docs: https://docs.gluwa.com/development/environments.md
+  detail: >-
+    Sandbox and production environments use distinct API keys. Note the sandbox
+    environment is documented as deprecated, pending an alternative.
+cross_links:
+  authentication: authentication/gluwa-authentication.yml
+  errors: errors/gluwa-error-codes.yml
+  changelog: changelog/gluwa-changelog.yml
+  webhooks: asyncapi/gluwa-webhooks.yml

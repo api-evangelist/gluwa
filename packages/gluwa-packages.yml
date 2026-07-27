@@ -1,0 +1,81 @@
+generated: '2026-07-19'
+method: searched
+source: https://www.npmjs.com/org/gluwa + https://docs.gluwa.com/llms.txt
+notes: >-
+  Gluwa publishes REST-API client SDKs (PHP, .NET, Java, JavaScript) documented at
+  docs.gluwa.com, plus a first-party @gluwa npm scope of TypeScript/Solidity libraries
+  for the Creditcoin / Universal Smart Contract (USC) blockchain stack.
+packages:
+  # --- Gluwa REST API SDKs (documented on docs.gluwa.com) ---
+  - language: javascript
+    registry: npm
+    name: "@gluwa/gluwa-js"
+    url: https://www.npmjs.com/package/@gluwa/gluwa-js
+    install: npm install @gluwa/gluwa-js
+    official: true
+    scope: gluwa-api
+    docs: https://docs.gluwa.com/development/gluwa-sdk-for-javascript-nodejs.md
+  - language: php
+    registry: docs
+    name: Gluwa SDK for PHP
+    url: https://docs.gluwa.com/development/gluwa-sdk-for-php.md
+    official: true
+    scope: gluwa-api
+  - language: dotnet
+    registry: docs
+    name: Gluwa SDK for .NET
+    url: https://docs.gluwa.com/development/gluwa-sdk-for-.net.md
+    official: true
+    scope: gluwa-api
+  - language: java
+    registry: docs
+    name: Gluwa SDK for Java
+    url: https://docs.gluwa.com/development/gluwa-sdk-for-java.md
+    official: true
+    scope: gluwa-api
+  # --- Creditcoin / USC blockchain SDKs (@gluwa npm scope) ---
+  - language: typescript
+    registry: npm
+    name: "@gluwa/usc-sdk"
+    version: 0.18.0
+    url: https://www.npmjs.com/package/@gluwa/usc-sdk
+    install: npm install @gluwa/usc-sdk
+    official: true
+    scope: usc
+    description: TypeScript SDK for the USC (Universal Smart Contract)
+  - language: typescript
+    registry: npm
+    name: "@gluwa/creditcoin-js"
+    version: 0.9.5
+    url: https://www.npmjs.com/package/@gluwa/creditcoin-js
+    install: npm install @gluwa/creditcoin-js
+    official: true
+    scope: creditcoin
+    description: JavaScript/TypeScript library for the Creditcoin protocol
+  - language: typescript
+    registry: npm
+    name: "@gluwa/creditcoin-dex-router-sdk"
+    version: 1.0.0
+    url: https://www.npmjs.com/package/@gluwa/creditcoin-dex-router-sdk
+    install: npm install @gluwa/creditcoin-dex-router-sdk
+    official: true
+    scope: creditcoin
+    description: Creditcoin DEX Router SDK
+  - language: solidity
+    registry: npm
+    name: "@gluwa/usc-contracts"
+    version: 0.1.2
+    url: https://www.npmjs.com/package/@gluwa/usc-contracts
+    install: npm install @gluwa/usc-contracts
+    official: true
+    scope: usc
+    description: Solidity contracts and libraries for the USC (Universal Smart Contract)
+  - language: typescript
+    registry: npm
+    name: "@gluwa/validator-rewards"
+    version: 0.3.0
+    url: https://www.npmjs.com/package/@gluwa/validator-rewards
+    install: npm install -g @gluwa/validator-rewards
+    official: true
+    scope: creditcoin
+    description: CLI to list unpaid staking eras for a Creditcoin validator

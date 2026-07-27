@@ -1,0 +1,45 @@
+generated: '2026-07-19'
+method: searched
+source: https://docs.gluwa.com/change-log/gluwa-api.md
+docs: https://docs.gluwa.com/change-log.md
+notes: >-
+  Gluwa maintains dated change logs for the Gluwa API/Dashboard, Wallet, and Exchange.
+  This captures the recent window of the Gluwa API change log. Versions are date-stamped
+  (calendar-versioned). The most recent published API entry is 2022-05.
+scheme: calendar-version
+current_version: '2022.05.01'
+change_logs:
+  - name: Gluwa API
+    url: https://docs.gluwa.com/change-log/gluwa-api.md
+  - name: Gluwa Wallet
+    url: https://docs.gluwa.com/change-log/gluwa-wallet.md
+  - name: Gluwa Exchange
+    url: https://docs.gluwa.com/change-log/gluwa-exchange.md
+entries:
+  - version: '2022.05.01'
+    date: '2022-05-16'
+    highlights:
+      - Launched ETH, USDC, USDT token support (getbalance/payment/transfer)
+      - Launched CTC token support (payments/transfers)
+      - Fixed amount and fee display for exchange transactions
+      - Added pagination for push notifications
+  - version: '2022.03.02'
+    date: '2022-03-21'
+    highlights:
+      - Fixed amount and fee for exchange transactions
+  - version: '2022.03.01'
+    date: '2022-03-21'
+    highlights:
+      - Added pagination and fixed values for push notifications
+      - Updated maturity date and deposits/withdrawals in transaction history
+  - version: '2022.02'
+    date: '2022-02-16'
+    highlights:
+      - Launched new Transaction History API endpoint for V7 app redesign
+      - Launched endpoint that displays rate/fee amount per token
+      - Launched endpoint returning current price in USD
+  - version: '2022-01'
+    date: '2022-01-19'
+    highlights:
+      - Unified ECurrency used by Gluwa API and MarketMaker
+      - Added GCRE (CTC ERC-20 Token) support on QR Code endpoint

@@ -1,0 +1,45 @@
+generated: '2026-07-19'
+method: searched
+source: https://docs.gluwa.com/api/errors-and-error-codes.md
+docs: https://docs.gluwa.com/api/errors-and-error-codes.md
+format: custom
+notes: >-
+  Gluwa REST API error envelope, captured from the docs error reference (no OpenAPI
+  published). Errors are keyed by a stable `Code` string; rely on Code, not Message,
+  for programmatic handling.
+envelope:
+  fields:
+    - name: Code
+      type: string
+      description: Stable error code; use this to programmatically handle errors.
+    - name: Message
+      type: string
+      description: Human-readable detail. Not recommended for programmatic branching.
+    - name: ID
+      type: string
+      optional: true
+      description: For 500 responses only; reference id to send to Gluwa support.
+    - name: ExtraData
+      type: string
+      optional: true
+      description: Extra data that may help handle the error; may be a JSON string.
+    - name: InnerErrors
+      type: array<InnerError>
+      optional: true
+      description: For validation errors; per-attribute error details.
+  inner_error:
+    fields:
+      - name: Code
+        type: string
+        description: Error code for the specific attribute.
+      - name: Path
+        type: string
+        description: Name of the request object attribute that has errors.
+      - name: Message
+        type: string
+        description: Human-readable detail for the attribute error.
+related:
+  idempotency_conflict:
+    status: 409
+    cause: Duplicate `Idem` (idempotency key) on transaction creation.
+    docs: https://docs.gluwa.com/development/idempotent-requests.md

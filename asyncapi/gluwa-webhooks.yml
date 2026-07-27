@@ -1,0 +1,19 @@
+generated: '2026-07-19'
+method: searched
+source: https://docs.gluwa.com/development/webhooks.md
+spec_type: Webhooks
+notes: >-
+  Gluwa documents webhooks but publishes no AsyncAPI document. This captures the
+  documented webhook surface. Webhooks are configured from the Gluwa Dashboard and
+  notify a registered/whitelisted wallet address of account events.
+webhooks:
+  - name: wallet-events
+    docs: https://docs.gluwa.com/development/webhooks.md
+    description: Be notified about events that happen in a Gluwa account.
+    setup: https://docs.gluwa.com/get-started/dashboard/webhooks.md
+  - name: address-notifications
+    docs: https://docs.gluwa.com/get-started/dashboard/addresses.md
+    description: Whitelist a wallet address and receive webhook notifications for it.
+  - name: exchange-webhook
+    docs: https://docs.gluwa.com/exchange-api/exchange-webhook.md
+    description: Webhook notifications for the Gluwa Exchange API.

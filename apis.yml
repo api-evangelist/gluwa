@@ -1,8 +1,30 @@
 aid: gluwa
 name: Gluwa
-description: Gluwa is a company surfaced as a portfolio company of 500-global and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Gluwa is a borderless financial platform and blockchain infrastructure company that
+  connects emerging markets to the global economy. Its consumer surface is the Gluwa
+  Wallet, Dashboard, Invest (Investor DAO / fixed-term interest accounts) and Exchange,
+  backed by the Gluwacoin interoperable stablecoin standard (USDG, KRWG, NGNG). Gluwa
+  exposes a REST API (balances, fees, transactions, payment QR codes, wrap/unwrap, and
+  an Exchange API for quotes, orders and order books) secured with API keys and address
+  signatures, with webhooks and idempotent transaction requests. Gluwa also builds and
+  operates Creditcoin, an EVM-compatible layer-1 blockchain, and the Universal Smart
+  Contract (USC) multichain framework, shipping TypeScript, Solidity, PHP, .NET and Java
+  SDKs. Originally surfaced as a 500 Global portfolio company.
 url: https://raw.githubusercontent.com/api-evangelist/gluwa/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://gluwa.com/resources/meta-image.png
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
@@ -11,10 +33,44 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
-apis: []
+- Blockchain
+- Cryptocurrency
+- Stablecoin
+- Payments
+- Fintech
+- Wallet
+- Creditcoin
+- Smart Contracts
+- Emerging Markets
+apis:
+- name: Gluwa API
+  description: >-
+    REST API for the Gluwa borderless financial platform — balances, fees, transactions,
+    payment QR codes, wrap/unwrap, and the Exchange API (quotes, orders, order books).
+    Secured with API keys and address signatures; supports webhooks and idempotent
+    transaction requests.
+  humanURL: https://docs.gluwa.com/api/api.md
+  baseURL: https://api.gluwa.com
+  tags:
+  - Payments
+  - Blockchain
+  - Stablecoin
+  properties:
+  - type: Documentation
+    url: https://docs.gluwa.com
+  - type: APIReference
+    url: https://docs.gluwa.com/api/api.md
+  - type: Authentication
+    url: authentication/gluwa-authentication.yml
+  - type: ErrorCatalog
+    url: errors/gluwa-error-codes.yml
+  - type: Webhooks
+    url: asyncapi/gluwa-webhooks.yml
+  - type: Idempotency
+    url: conventions/gluwa-conventions.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
@@ -23,3 +79,42 @@ maintainers:
 common:
 - type: Website
   url: https://gluwa.com
+- type: DeveloperPortal
+  url: https://dashboard.gluwa.com
+- type: Documentation
+  url: https://docs.gluwa.com
+- type: APIReference
+  url: https://docs.gluwa.com/api/api.md
+- type: GettingStarted
+  url: https://docs.gluwa.com/get-started/dashboard.md
+- type: SignUp
+  url: https://dashboard.gluwa.com
+- type: Blog
+  url: https://medium.com/@gluwa
+- type: GitHubOrganization
+  url: https://github.com/gluwa
+- type: Authentication
+  url: authentication/gluwa-authentication.yml
+- type: Conventions
+  url: conventions/gluwa-conventions.yml
+- type: Idempotency
+  url: conventions/gluwa-conventions.yml
+- type: ErrorCatalog
+  url: errors/gluwa-error-codes.yml
+- type: Webhooks
+  url: asyncapi/gluwa-webhooks.yml
+- type: ChangeLog
+  url: changelog/gluwa-changelog.yml
+- type: Packages
+  url: packages/gluwa-packages.yml
+- type: SDKs
+  url: packages/gluwa-packages.yml
+- type: LLMsTxt
+  url: llms/gluwa-llms.txt
+- type: DomainSecurity
+  url: security/gluwa-domain-security.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

@@ -1,0 +1,63 @@
+# Gluwa
+
+## Gluwa Documentation
+
+- [What is Gluwa](https://docs.gluwa.com/readme.md): Gluwa is a borderless financial platform where anyone with a smartphone can transact with each other across the border.
+- [Change Log](https://docs.gluwa.com/change-log.md): This section provides an overview of user-facing/impacting release notes.
+- [Gluwa API Change Log](https://docs.gluwa.com/change-log/gluwa-api.md): All release notes pertaining to Gluwa API and Dashboard
+- [Gluwa Wallet Change Log](https://docs.gluwa.com/change-log/gluwa-wallet.md): All release notes pertaining to Gluwa Wallet
+- [Gluwa Exchange Change Log](https://docs.gluwa.com/change-log/gluwa-exchange.md)
+- [Gluwa Mobile App](https://docs.gluwa.com/get-started/gluwa.md): Learn how to use Gluwa mobile app
+- [Gluwa Invest (Investor DAO) FAQ](https://docs.gluwa.com/get-started/gluwa/gluwa-invest-bond-account-faq.md): A list of frequently asked question about how our Investor DAO operates
+- [Gluwa Invest (Fixed-Term Interest Account) FAQ](https://docs.gluwa.com/get-started/gluwa/gluwa-invest-bond-account-faq-1.md): A list of frequently asked question about how our Fixed-Term Interest Account operates
+- [Create a New Gluwa Wallet](https://docs.gluwa.com/get-started/gluwa/create-a-new-gluwa-wallet.md): All you need is a smartphone to create Gluwa wallet.
+- [Restore Wallet](https://docs.gluwa.com/get-started/gluwa/restore-wallet.md): If you forgot your password, you can recover you wallet using the Recovery Phrase.
+- [Send Gluwacoin to an address](https://docs.gluwa.com/get-started/gluwa/send-gluwacoin-to-an-address.md)
+- [Make QR Code Payments](https://docs.gluwa.com/get-started/gluwa/make-qr-code-payments-1.md): You can simply scan a QR code to make a payment.
+- [Create a Signature](https://docs.gluwa.com/get-started/gluwa/create-a-signature.md): You can sign a message with your wallet's private key
+- [Access Private Keys](https://docs.gluwa.com/get-started/gluwa/wallet-credentials.md): Access your private keys
+- [Non-Custodial Wallet](https://docs.gluwa.com/get-started/gluwa/non-custodial-wallet.md): Only you have access to your funds
+- [Gluwa Lottery Account FAQ](https://docs.gluwa.com/get-started/gluwa/gluwa-lottery-account-faq.md): Frequently Asked Questions regarding Gluwa's Lottery Account
+- [Fees](https://docs.gluwa.com/get-started/gluwa/fees.md): Learn about transaction fees in Gluwa
+- [Transaction Status](https://docs.gluwa.com/get-started/gluwa/transaction-status.md): Learn about types of transactions status
+- [Delete your Gluwa Account](https://docs.gluwa.com/get-started/gluwa/delete-your-gluwa-account.md): Learn how to delete your account
+- [Gluwa Dashboard](https://docs.gluwa.com/get-started/dashboard.md): Learn how to acquire credentials necessary to use Gluwa.
+- [API Keys](https://docs.gluwa.com/get-started/dashboard/api-keys.md): Acquire API key and secret to use the Gluwa API
+- [Webhooks](https://docs.gluwa.com/get-started/dashboard/webhooks.md): Set up webhook to your wallet and get notified
+- [Addresses](https://docs.gluwa.com/get-started/dashboard/addresses.md): Whitelist your wallet address and get webhook notifications
+- [Transactions](https://docs.gluwa.com/get-started/dashboard/transactions.md): Easily view your transaction history for a registered address from the Gluwa Dashboard
+- [Gluwacoin](https://docs.gluwa.com/get-started/gluwacoin.md): Learn what Gluwacoin is and how it works
+- [Buttons and Marks](https://docs.gluwa.com/design/buttons-and-marks.md): Learn how to use Gluwa buttons and marks
+- [Environments](https://docs.gluwa.com/development/environments.md)
+- [QR Codes](https://docs.gluwa.com/development/qr-codes.md): Explore ways to integrate Gluwa QR code payments in your website or mobile app.
+- [Webhooks](https://docs.gluwa.com/development/webhooks.md): Use webhooks to be notified about events that happen in a Gluwa account.
+- [Creating Signatures](https://docs.gluwa.com/development/creating-transaction-signatures.md)
+- [Idempotent Requests](https://docs.gluwa.com/development/idempotent-requests.md)
+- [Sending Address](https://docs.gluwa.com/development/sending-address.md): Use QR code scanner on Gluwa mobile app to get wallet address from your user.
+- [Gluwa SDK for PHP](https://docs.gluwa.com/development/gluwa-sdk-for-php.md)
+- [Gluwa SDK for .NET](https://docs.gluwa.com/development/gluwa-sdk-for-.net.md)
+- [Gluwa SDK for Java](https://docs.gluwa.com/development/gluwa-sdk-for-java.md)
+- [Gluwa SDK for JavaScript (Node.js)](https://docs.gluwa.com/development/gluwa-sdk-for-javascript-nodejs.md)
+- [API Reference](https://docs.gluwa.com/api/api.md): Learn how to use various endpoints of the Gluwa API.
+- [Authorization](https://docs.gluwa.com/api/authentication.md): Learn various authorization methods you need to use Gluwa API.
+- [Currency and Conversion Symbols](https://docs.gluwa.com/api/currency-and-conversion-symbols.md): Learn which currencies Gluwa supports.
+- [Errors and Error Codes](https://docs.gluwa.com/api/errors-and-error-codes.md): Learn how to handle errors.
+- [Balance](https://docs.gluwa.com/api/balance.md): Retrieve the current balance of an address
+- [Fee](https://docs.gluwa.com/api/fee.md): Retrieve the minimum fee amount for a transaction.
+- [Transaction](https://docs.gluwa.com/api/transaction.md): Create and retrieve transactions.
+- [Payment QR Code](https://docs.gluwa.com/api/qr-code.md): Generate QR Code to receive payments.
+- [Wrap / Unwrap](https://docs.gluwa.com/api/wrap-unwrap.md)
+- [Exchange Webhook](https://docs.gluwa.com/exchange-api/exchange-webhook.md)
+- [Quote](https://docs.gluwa.com/exchange-api/quote.md): Learn about the Quote objects and its endpoints.
+- [Order](https://docs.gluwa.com/exchange-api/order.md)
+- [Exchange Request](https://docs.gluwa.com/exchange-api/exchange-request.md)
+- [Order Book](https://docs.gluwa.com/exchange-api/order-book.md)
+
+## Gluwacoin Documentation
+
+- [What is Gluwacoin](https://docs.gluwa.com/gluwacoin/master.md): Gluwacoin is an interoperable stablecoin standard that can serve as a viable medium of exchange and unit of account for decentralized applications.
+- [Gluwacoin Token Standard](https://docs.gluwa.com/gluwacoin/gluwacoin-token-standard.md): Learn how Gluwacoin extends the ERC20 token standard
+- [Methods](https://docs.gluwa.com/gluwacoin/gluwacoin-token-standard/methods.md): Learn custom methods of the Gluwacoin standard
+- [Events](https://docs.gluwa.com/gluwacoin/gluwacoin-token-standard/events.md): Learn custom events of the Gluwacoin standard
+- [Terms of Use](https://docs.gluwa.com/gluwacoin/legal/terms-of-use.md)
+- [Privacy Policy](https://docs.gluwa.com/gluwacoin/legal/privacy-policy.md)
