@@ -38,6 +38,17 @@ tags:
 - Company
 - Blockchain
 - Cryptocurrency
+- Stablecoins
+- Payments
+- Fintech
+- Wallets
+- Creditcoin
+- Smart Contracts
+- Emerging Markets
+tags_raw:
+- Company
+- Blockchain
+- Cryptocurrency
 - Stablecoin
 - Payments
 - Fintech
@@ -55,6 +66,10 @@ apis:
   humanURL: https://docs.gluwa.com/api/api.md
   baseURL: https://api.gluwa.com
   tags:
+  - Payments
+  - Blockchain
+  - Stablecoins
+  tags_raw:
   - Payments
   - Blockchain
   - Stablecoin
