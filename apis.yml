@@ -49,7 +49,7 @@ tags:
 - Company
 - Blockchain
 - Cryptocurrency
-- Stablecoins
+- Stablecoin
 - Payments
 - Fintech
 - Wallets
@@ -79,7 +79,7 @@ apis:
   tags:
   - Payments
   - Blockchain
-  - Stablecoins
+  - Stablecoin
   tags_raw:
   - Payments
   - Blockchain
